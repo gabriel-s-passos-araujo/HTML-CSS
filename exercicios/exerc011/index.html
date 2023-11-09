@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o navegador
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_peq.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_med.png" type="image/png">
+        <img src="imagens/imagem_gran.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdios</h1>
+    <p>vamos aprender a reproduzir aúdio dentro do site com html5</p>
+   <!-- <audio src="mídia/On the Delta - John Patitucci.mp3" autoplay controls></audio>-->
+    <!--MP3 WAV OGG - TIPOS DE AÚDIO PRA USAR-->
+    <audio preload="metadata" controls loop> <!-- metadata carrega só informações, load carrega tudo, none não carrega nada-->
+        <source src="mídia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="mídia/guanacast-33.ogg" type="audio/ogg">
+        <source src="mídia/guanacast-33.wav" type="audio/wav"> <!--EVITAR ARQUIVOS WAV-->
+        <p>infelizmente seu navegador não é compátivel com o aúdio <a href="mídia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mp4">clique aqui para baixar</a></p>
+    </audio>
+    <!--<p>infelizmente seu navegador não é compátivel com o aúdio <a href="mídia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mp4" target="_blank">clique aqui para baixar</a></p>-->
+</body>
+</html>
