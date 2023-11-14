@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*para torna o titulo da tabela statico*/
         }
 
         td, th{
@@ -31,6 +32,14 @@
             padding: 10px;
             background-color: lightgray;
             font-weight: bold;
+        }
+        thead > tr > th{ /*Para torna o título da tabela statico*/
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: gray;
         }
     </style>
 </head>
