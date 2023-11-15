@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        thead > tr > th{
+            font-variant: small-caps;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        tbody > tr > td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td.nome{
+            text-align: left;
+            
+        }
+        th.gen{
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+            
+        }
+        th{
+            background-color: #228B22;
+        }
+        #man{
+            border-top: 3px solid black;
+            
+        }
+        tr:nth-child(odd){
+            background-color: #7A917A;
+        }
+        tr:nth-child(even){
+            background-color: #485E48;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            background-color: #1D331D;
+            border: 2px solid black;
+            border-bottom: 0px;
+        }
+        tfoot > th,td{
+            border: 1px solid black;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exécicio de tabelas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</td>
+                <th scope="col">Nomes</td>
+                <th scope="colgroup" colspan="3">Filmes</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th class="gen" rowspan="3" scope="rowgroup">Mulheres</td>
+                <td class="nome">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                
+                <td class="nome">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td class="nome">Claúdia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr id="man">
+                <th class="gen" rowspan="3" scope="rowgroup">Homens</td>
+                <td class="nome">Bruno Medonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td class="nome">Daniel Lorenço</td>
+                <Td>Wall-me</Td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td class="nome">Fabiano Mota</td>
+                <Td>Star wars</Td>
+                <td>Taxi drive</td>
+                <td>Toy story</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
