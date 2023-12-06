@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
 /*Versão mobile first*/
+/*
+CELULAR – até 600px
+pequenos tablets e telefones largos – min 600px
+Laptops and small screen – min 768px
+Large screens and Desktops – min 992px
+TV and Extra Large Screens – min 1200px
+*/
+
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +18,7 @@
     box-sizing: border-box;
 }
 
-body, html{
+html{
     width: 100vw;
     height: 100vh;
 }
@@ -18,7 +26,6 @@ body, html{
 body{
     background: black url(../imagens/back-phone.jpg) center center no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 main{
